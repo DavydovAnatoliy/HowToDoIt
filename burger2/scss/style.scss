@@ -1,0 +1,61 @@
+@import '_nullStyle';
+.wrapper {
+    padding: 100px;
+}
+
+.head {
+    background-color: blue;
+    height: 240px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    & .bef{
+        padding-left: 300px;
+        &__sun{
+             height: 70px;
+             width: 70px;
+             background: rgb(68, 68, 65);
+        }
+        // content: '';
+        position: absolute;
+    height: 200px;
+    width: 380px;
+    background-color: rgb(241, 191, 191);
+    top: 0;
+    left: 0;
+    }
+}
+
+
+
+
+
+.bod {
+position: relative;
+    &__nav {
+        width: 100px;
+        height: 140px;
+        background-color: rgb(238, 56, 11);
+    }
+
+    &__log {
+            width: 400px;
+            height: 100px;
+            background-color: rgb(101, 226, 17);
+            position: relative;
+            & .li{
+                border: 1px solid white;
+               width: 10px;
+               height: 10px;
+               background-color: rgb(6, 1, 24);
+            }
+    }
+
+    &__bur {
+            width: 100px;
+            height: 140px;
+            background-color: rgb(209, 17, 226);
+    }
+}
+
