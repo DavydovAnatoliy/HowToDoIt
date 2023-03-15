@@ -1,0 +1,85 @@
+@import "_nullStyle";
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+
+.page {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.paralax {
+position: relative;
+height: 100%;
+background-color: red;
+    &__montain {
+ position: fixed;
+ width: 100%;
+ height: 100%;
+        &_1 {
+           background: url(../img/m_1.png) 0 0 / cover no-repeat;
+        }
+
+        &_2 {
+            background: url(../img/m_2.png) 100% 100% / 45% no-repeat;
+            z-index:1;
+        }
+
+        &_3 {
+            background: url(../img/m_3.png) 0% 100% / 100% no-repeat;
+            z-index:1;
+        }
+    }
+
+    &__fog {
+        background: url(../img/fog_1.png) 0 0 / 100% no-repeat;
+         position: fixed;
+         width: 100%;
+         height: 100%;
+        z-index: 2;
+    }
+}
+
+.content {
+position: relative;
+    &__body {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    &__title {
+        font-size: 200px;
+    }
+
+    &__subtitle {
+        font-size: 120px;
+    }
+
+    &__article {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 25px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+
+
+.block{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+}
